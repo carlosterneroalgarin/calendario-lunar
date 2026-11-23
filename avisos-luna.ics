@@ -1,0 +1,1836 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Calendario lunar//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Avisos luna
+X-WR-TIMEZONE:Europe/Madrid
+X-WR-CALDESC:Aviso 3 días antes de cada luna llena para dormir pronto
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:luna-20261124@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20261121T100000
+DTEND;TZID=Europe/Madrid:20261121T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el martes\, 24 de noviembre\, 15:53 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20261224@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20261221T100000
+DTEND;TZID=Europe/Madrid:20261221T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el jueves\, 24 de diciembre\, 02:28 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270122@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270119T100000
+DTEND;TZID=Europe/Madrid:20270119T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 22 de enero\, 13:17 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270221@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270218T100000
+DTEND;TZID=Europe/Madrid:20270218T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 21 de febrero\, 00:23 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270322@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270319T100000
+DTEND;TZID=Europe/Madrid:20270319T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 22 de marzo\, 11:43 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270421@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270418T100000
+DTEND;TZID=Europe/Madrid:20270418T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 21 de abril\, 00:27 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270520@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270517T100000
+DTEND;TZID=Europe/Madrid:20270517T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 20 de mayo\, 12:59 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270619@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270616T100000
+DTEND;TZID=Europe/Madrid:20270616T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 19 de junio\, 02:44 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270718@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270715T100000
+DTEND;TZID=Europe/Madrid:20270715T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 18 de julio\, 17:45 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270817@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270814T100000
+DTEND;TZID=Europe/Madrid:20270814T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 17 de agosto\, 09:29 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20270916@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20270913T100000
+DTEND;TZID=Europe/Madrid:20270913T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 16 de septiembre\, 01:03 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20271015@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20271012T100000
+DTEND;TZID=Europe/Madrid:20271012T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 15 de octubre\, 15:47 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20271114@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20271111T100000
+DTEND;TZID=Europe/Madrid:20271111T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 14 de noviembre\, 04:26 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20271213@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20271210T100000
+DTEND;TZID=Europe/Madrid:20271210T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 13 de diciembre\, 17:09 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280112@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280109T100000
+DTEND;TZID=Europe/Madrid:20280109T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el miércoles\, 12 de enero\, 05:03 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280210@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280207T100000
+DTEND;TZID=Europe/Madrid:20280207T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el jueves\, 10 de febrero\, 16:04 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280311@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280308T100000
+DTEND;TZID=Europe/Madrid:20280308T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 11 de marzo\, 02:06 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280409@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280406T100000
+DTEND;TZID=Europe/Madrid:20280406T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 9 de abril\, 12:27 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280508@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280505T100000
+DTEND;TZID=Europe/Madrid:20280505T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 8 de mayo\, 21:49 h (hora de España).\nE
+ stas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena to
+ ca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280607@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280604T100000
+DTEND;TZID=Europe/Madrid:20280604T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 7 de junio\, 08:09 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280706@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280703T100000
+DTEND;TZID=Europe/Madrid:20280703T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 6 de julio\, 20:11 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280805@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280802T100000
+DTEND;TZID=Europe/Madrid:20280802T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 5 de agosto\, 10:10 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20280904@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280901T100000
+DTEND;TZID=Europe/Madrid:20280901T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 4 de septiembre\, 01:48 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20281003@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20280930T100000
+DTEND;TZID=Europe/Madrid:20280930T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 3 de octubre\, 18:25 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20281102@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20281030T100000
+DTEND;TZID=Europe/Madrid:20281030T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 2 de noviembre\, 10:17 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20281202@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20281129T100000
+DTEND;TZID=Europe/Madrid:20281129T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 2 de diciembre\, 02:40 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20281231@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20281228T100000
+DTEND;TZID=Europe/Madrid:20281228T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 31 de diciembre\, 17:48 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290130@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290127T100000
+DTEND;TZID=Europe/Madrid:20290127T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 30 de enero\, 07:03 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290228@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290225T100000
+DTEND;TZID=Europe/Madrid:20290225T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el miércoles\, 28 de febrero\, 18:10 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290330@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290327T100000
+DTEND;TZID=Europe/Madrid:20290327T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 30 de marzo\, 04:27 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290428@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290425T100000
+DTEND;TZID=Europe/Madrid:20290425T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 28 de abril\, 12:37 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290527@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290524T100000
+DTEND;TZID=Europe/Madrid:20290524T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 27 de mayo\, 20:38 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290626@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290623T100000
+DTEND;TZID=Europe/Madrid:20290623T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 26 de junio\, 05:23 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290725@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290722T100000
+DTEND;TZID=Europe/Madrid:20290722T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 25 de julio\, 15:37 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290824@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290821T100000
+DTEND;TZID=Europe/Madrid:20290821T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 24 de agosto\, 03:52 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20290922@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20290919T100000
+DTEND;TZID=Europe/Madrid:20290919T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 22 de septiembre\, 18:29 h (hora de Esp
+ aña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna
+  llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20291022@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20291019T100000
+DTEND;TZID=Europe/Madrid:20291019T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 22 de octubre\, 11:28 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20291121@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20291118T100000
+DTEND;TZID=Europe/Madrid:20291118T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 21 de noviembre\, 05:03 h (hora de E
+ spaña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de lu
+ na llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20291220@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20291217T100000
+DTEND;TZID=Europe/Madrid:20291217T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 20 de diciembre\, 23:46 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300119@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300116T100000
+DTEND;TZID=Europe/Madrid:20300116T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 19 de enero\, 16:54 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300218@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300215T100000
+DTEND;TZID=Europe/Madrid:20300215T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 18 de febrero\, 07:20 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300319@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300316T100000
+DTEND;TZID=Europe/Madrid:20300316T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 19 de marzo\, 18:56 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300418@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300415T100000
+DTEND;TZID=Europe/Madrid:20300415T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el jueves\, 18 de abril\, 05:20 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300517@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300514T100000
+DTEND;TZID=Europe/Madrid:20300514T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 17 de mayo\, 13:19 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300615@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300612T100000
+DTEND;TZID=Europe/Madrid:20300612T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 15 de junio\, 20:41 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300715@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300712T100000
+DTEND;TZID=Europe/Madrid:20300712T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 15 de julio\, 04:12 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300813@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300810T100000
+DTEND;TZID=Europe/Madrid:20300810T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 13 de agosto\, 12:45 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20300911@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20300908T100000
+DTEND;TZID=Europe/Madrid:20300908T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 11 de septiembre\, 23:18 h (hora de 
+ España).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de l
+ una llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20301011@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20301008T100000
+DTEND;TZID=Europe/Madrid:20301008T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 11 de octubre\, 12:47 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20301110@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20301107T100000
+DTEND;TZID=Europe/Madrid:20301107T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 10 de noviembre\, 04:31 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20301209@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20301206T100000
+DTEND;TZID=Europe/Madrid:20301206T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 9 de diciembre\, 23:41 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310108@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310105T100000
+DTEND;TZID=Europe/Madrid:20310105T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 8 de enero\, 19:26 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310207@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310204T100000
+DTEND;TZID=Europe/Madrid:20310204T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 7 de febrero\, 13:46 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310309@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310306T100000
+DTEND;TZID=Europe/Madrid:20310306T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 9 de marzo\, 05:30 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310407@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310404T100000
+DTEND;TZID=Europe/Madrid:20310404T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 7 de abril\, 19:21 h (hora de España).\n
+ Estas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena t
+ oca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310507@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310504T100000
+DTEND;TZID=Europe/Madrid:20310504T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 7 de mayo\, 05:40 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310605@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310602T100000
+DTEND;TZID=Europe/Madrid:20310602T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el jueves\, 5 de junio\, 13:58 h (hora de España).\n
+ Estas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena t
+ oca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310704@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310701T100000
+DTEND;TZID=Europe/Madrid:20310701T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 4 de julio\, 21:01 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310803@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310731T100000
+DTEND;TZID=Europe/Madrid:20310731T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el domingo\, 3 de agosto\, 03:46 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310901@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310829T100000
+DTEND;TZID=Europe/Madrid:20310829T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 1 de septiembre\, 11:21 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20310930@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20310927T100000
+DTEND;TZID=Europe/Madrid:20310927T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 30 de septiembre\, 20:58 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20311030@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20311027T100000
+DTEND;TZID=Europe/Madrid:20311027T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 30 de octubre\, 08:33 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20311129@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20311126T100000
+DTEND;TZID=Europe/Madrid:20311126T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 29 de noviembre\, 00:19 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20311228@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20311225T100000
+DTEND;TZID=Europe/Madrid:20311225T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 28 de diciembre\, 18:33 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320127@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320124T100000
+DTEND;TZID=Europe/Madrid:20320124T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 27 de enero\, 13:52 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320226@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320223T100000
+DTEND;TZID=Europe/Madrid:20320223T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 26 de febrero\, 08:42 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320327@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320324T100000
+DTEND;TZID=Europe/Madrid:20320324T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 27 de marzo\, 01:46 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320425@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320422T100000
+DTEND;TZID=Europe/Madrid:20320422T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 25 de abril\, 17:09 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320525@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320522T100000
+DTEND;TZID=Europe/Madrid:20320522T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 25 de mayo\, 04:37 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320623@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320620T100000
+DTEND;TZID=Europe/Madrid:20320620T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 23 de junio\, 13:32 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320722@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320719T100000
+DTEND;TZID=Europe/Madrid:20320719T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el jueves\, 22 de julio\, 20:52 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320821@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320818T100000
+DTEND;TZID=Europe/Madrid:20320818T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 21 de agosto\, 03:47 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20320919@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20320916T100000
+DTEND;TZID=Europe/Madrid:20320916T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el domingo\, 19 de septiembre\, 11:31 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20321018@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20321015T100000
+DTEND;TZID=Europe/Madrid:20321015T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 18 de octubre\, 20:59 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20321117@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20321114T100000
+DTEND;TZID=Europe/Madrid:20321114T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 17 de noviembre\, 07:43 h (hora de E
+ spaña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de lu
+ na llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20321216@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20321213T100000
+DTEND;TZID=Europe/Madrid:20321213T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 16 de diciembre\, 21:49 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330115@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330112T100000
+DTEND;TZID=Europe/Madrid:20330112T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 15 de enero\, 14:07 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330214@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330211T100000
+DTEND;TZID=Europe/Madrid:20330211T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 14 de febrero\, 08:04 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330316@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330313T100000
+DTEND;TZID=Europe/Madrid:20330313T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 16 de marzo\, 02:37 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330414@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330411T100000
+DTEND;TZID=Europe/Madrid:20330411T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 14 de abril\, 21:17 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330514@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330511T100000
+DTEND;TZID=Europe/Madrid:20330511T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 14 de mayo\, 12:43 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330613@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330610T100000
+DTEND;TZID=Europe/Madrid:20330610T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 13 de junio\, 01:19 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330712@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330709T100000
+DTEND;TZID=Europe/Madrid:20330709T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 12 de julio\, 11:28 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330810@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330807T100000
+DTEND;TZID=Europe/Madrid:20330807T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 10 de agosto\, 20:08 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20330909@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20330906T100000
+DTEND;TZID=Europe/Madrid:20330906T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 9 de septiembre\, 04:20 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20331008@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20331005T100000
+DTEND;TZID=Europe/Madrid:20331005T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 8 de octubre\, 12:58 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20331106@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20331103T100000
+DTEND;TZID=Europe/Madrid:20331103T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el domingo\, 6 de noviembre\, 21:32 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20331206@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20331203T100000
+DTEND;TZID=Europe/Madrid:20331203T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 6 de diciembre\, 08:22 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340104@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340101T100000
+DTEND;TZID=Europe/Madrid:20340101T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 4 de enero\, 20:48 h (hora de Españ
+ a).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna ll
+ ena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340203@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340131T100000
+DTEND;TZID=Europe/Madrid:20340131T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 3 de febrero\, 11:05 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340305@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340302T100000
+DTEND;TZID=Europe/Madrid:20340302T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 5 de marzo\, 03:11 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340403@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340331T100000
+DTEND;TZID=Europe/Madrid:20340331T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 3 de abril\, 21:19 h (hora de España).\n
+ Estas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena t
+ oca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340503@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340430T100000
+DTEND;TZID=Europe/Madrid:20340430T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 3 de mayo\, 14:16 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340602@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340530T100000
+DTEND;TZID=Europe/Madrid:20340530T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 2 de junio\, 05:54 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340701@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340628T100000
+DTEND;TZID=Europe/Madrid:20340628T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el sábado\, 1 de julio\, 19:44 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340731@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340728T100000
+DTEND;TZID=Europe/Madrid:20340728T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 31 de julio\, 07:54 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340829@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340826T100000
+DTEND;TZID=Europe/Madrid:20340826T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 29 de agosto\, 18:49 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20340928@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20340925T100000
+DTEND;TZID=Europe/Madrid:20340925T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 28 de septiembre\, 04:57 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20341027@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20341024T100000
+DTEND;TZID=Europe/Madrid:20341024T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el viernes\, 27 de octubre\, 14:42 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20341125@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20341122T100000
+DTEND;TZID=Europe/Madrid:20341122T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 25 de noviembre\, 23:32 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20341225@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20341222T100000
+DTEND;TZID=Europe/Madrid:20341222T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el lunes\, 25 de diciembre\, 09:55 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350123@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350120T100000
+DTEND;TZID=Europe/Madrid:20350120T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 23 de enero\, 21:17 h (hora de España).
+ \nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena
+  toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350222@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350219T100000
+DTEND;TZID=Europe/Madrid:20350219T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 22 de febrero\, 09:54 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350323@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350320T100000
+DTEND;TZID=Europe/Madrid:20350320T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 23 de marzo\, 23:42 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350422@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350419T100000
+DTEND;TZID=Europe/Madrid:20350419T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 22 de abril\, 15:20 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350522@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350519T100000
+DTEND;TZID=Europe/Madrid:20350519T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el martes\, 22 de mayo\, 06:25 h (hora de España).\
+ nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llena 
+ toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350620@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350617T100000
+DTEND;TZID=Europe/Madrid:20350617T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 20 de junio\, 21:37 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350720@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350717T100000
+DTEND;TZID=Europe/Madrid:20350717T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el viernes\, 20 de julio\, 12:36 h (hora de España)
+ .\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna llen
+ a toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350819@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350816T100000
+DTEND;TZID=Europe/Madrid:20350816T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el domingo\, 19 de agosto\, 03:00 h (hora de España
+ ).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna lle
+ na toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20350917@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20350914T100000
+DTEND;TZID=Europe/Madrid:20350914T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el lunes\, 17 de septiembre\, 16:23 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20351017@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20351014T100000
+DTEND;TZID=Europe/Madrid:20351014T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el miércoles\, 17 de octubre\, 04:36 h (hora de Esp
+ aña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna
+  llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20351115@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20351112T100000
+DTEND;TZID=Europe/Madrid:20351112T101500
+SUMMARY:🌕 Luna llena en 3 días · dormir pronto
+DESCRIPTION:Luna llena el jueves\, 15 de noviembre\, 14:49 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Luna llena en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:luna-20351215@calendario-lunar
+DTSTAMP:20261123T191227Z
+DTSTART;TZID=Europe/Madrid:20351212T100000
+DTEND;TZID=Europe/Madrid:20351212T101500
+SUMMARY:🌕 Superluna en 3 días · dormir pronto
+DESCRIPTION:Superluna el sábado\, 15 de diciembre\, 01:33 h (hora de Espa
+ ña).\nEstas 3 noches se duerme peor: acuéstate pronto.\nEl día de luna 
+ llena toca descanso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Superluna en 3 días
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR

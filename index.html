@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Calendario lunar</title>
+<meta name="description" content="Fases de la luna día a día, días de descanso en luna llena, superlunas, eclipses y aviso 3 días antes.">
+<meta name="theme-color" content="#2a1a14">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Luna">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#2a1a14; --panel:#3a251c; --line:#4f3528;
+  --moon:#e3c48f; --shadow:#4a3026; --fg:#f1e3cc; --muted:#b39a80; --gold:#d9a441;
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg);color:var(--fg);margin:0}
+body{font:14px var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-top:calc(20px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--display);font-weight:400;font-size:2.2rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0;font-size:.9rem}
+.next{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:16px;align-items:center}
+.next svg{flex:0 0 64px}
+.next .k{text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;color:var(--muted)}
+.next .big{font-family:var(--display);font-size:1.7rem;line-height:1.1}
+.next .when{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.today{font-size:.9rem;color:var(--fg)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.nav h2{font-family:var(--display);font-weight:400;font-size:1.6rem;margin:0;text-transform:capitalize}
+.nav>button{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:10px;width:44px;height:40px;font-size:1.2rem;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hoy{background:none;border:none;color:var(--gold);font:inherit;font-size:.85rem;cursor:pointer;text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px 2px}
+.dow{text-align:center;font-size:.68rem;letter-spacing:.06em;color:var(--muted);padding-bottom:4px}
+.day{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 0;border:1px solid transparent;border-radius:10px;min-width:0}
+.day .n{align-self:flex-start;padding-left:6px;font-size:.95rem;font-weight:600;font-variant-numeric:tabular-nums}
+.day .lab{font-size:.7rem;color:var(--muted);line-height:1.15;text-align:center}
+.day .pct{font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.day.ev .lab{color:var(--moon);font-size:.62rem}
+.day.is-today{border-color:var(--gold);background:rgba(217,164,65,.08)}
+.day.full{background:rgba(227,196,143,.13);border-color:var(--moon)}
+.rest{color:var(--gold);font-weight:600;font-size:.68rem}
+.day.pre{background:rgba(217,164,65,.05)}
+.day.over{box-shadow:inset 0 -3px 0 var(--gold)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-family:var(--display);font-weight:400;font-size:1.4rem;margin:0}
+.card p{margin:0}
+.alerta label{font-size:.95rem}
+.alerta b{color:var(--gold);font-variant-numeric:tabular-nums}
+.alerta input{width:100%;accent-color:var(--gold)}
+.big2{font-size:.9rem;color:var(--fg)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--gold);background:var(--gold);color:#2a1a14;font:600 .9rem var(--body);cursor:pointer;text-decoration:none}
+.btn.sec{background:transparent;color:var(--gold)}
+.btn[disabled]{opacity:.5;cursor:default}
+.estado{font-size:.9rem;color:var(--fg)}
+.estado.ok{color:var(--moon)}
+.sep{border-top:1px solid var(--line);padding-top:10px}
+.zz{font-size:.56rem;color:var(--gold);text-align:center;line-height:1.1}
+.ecl{color:#e8957a;font-size:.62rem;font-weight:600}
+.year .ecl{font-size:.75rem}
+.tag{color:var(--gold);font-size:.75rem;font-weight:600}
+.year h3{font-family:var(--display);font-weight:400;font-size:1.4rem;margin:0 0 8px}
+.year ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.year li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.year li span:last-child{color:var(--muted)}
+.note{font-size:.78rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Calendario lunar</h1>
+    <p class="sub">Fases de la luna día a día · hora de España</p>
+  </header>
+
+  <section class="next" aria-live="polite">
+    <svg id="nextIcon" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"></svg>
+    <div>
+      <div class="k">Próximo descanso · luna llena</div>
+      <div class="big" id="nextDays"></div>
+      <div class="when" id="nextWhen"></div>
+      <div class="today" id="todayTxt"></div>
+    </div>
+  </section>
+
+  <section class="card" id="avisos">
+    <h3>Aviso 3 días antes de la luna llena</h3>
+    <p class="estado" id="avEstado" aria-live="polite"></p>
+    <div class="btns">
+      <button class="btn" id="avOn">Activar avisos en este móvil</button>
+      <button class="btn sec" id="avTest" hidden>Probar aviso</button>
+      <button class="btn sec" id="avOff" hidden>Desactivar</button>
+      <button class="btn sec" id="instalar" hidden>Instalar la app</button>
+    </div>
+    <p class="note" id="avNota"></p>
+    <div class="sep">
+      <p class="big2">El aviso más seguro: en tu calendario</p>
+      <p class="note" style="margin:4px 0 10px">Te suscribe a un calendario «Avisos luna» con un aviso a las 10:00, 3 días antes de cada luna llena. Salta aunque no abras la app.</p>
+      <div class="btns">
+        <a class="btn sec" id="calGoogle" target="_blank" rel="noopener">Google Calendar</a>
+        <a class="btn sec" id="calApple">iPhone / otros</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="nav">
+      <button id="prev" aria-label="Mes anterior">‹</button>
+      <div style="text-align:center">
+        <h2 id="monthName"></h2>
+        <button class="hoy" id="goToday">Volver a hoy</button>
+      </div>
+      <button id="next" aria-label="Mes siguiente">›</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="year">
+    <h3>Días de descanso de los próximos 12 meses</h3>
+    <ul id="list"></ul>
+  </section>
+
+  <p class="note">Las fechas se calculan con fórmulas astronómicas (precisión de unos minutos). Lo que dicen los estudios: con luna llena no hay más urgencias psiquiátricas, pero sí se duerme menos y más tarde las noches anteriores. Por eso los 3 días previos salen marcados con «Dormir pronto». Superluna = luna llena más cerca de la Tierra (menos de 362.000 km).</p>
+
+  <section class="card alerta">
+    <label for="umbral">Aviso cuando la luna esté al <b id="umbralTxt">87</b>% o más</label>
+    <input type="range" id="umbral" min="50" max="99" step="1" value="87">
+    <p id="periodo" class="big2"></p>
+    <p class="note">Los días que pasan del porcentaje salen con una raya dorada abajo.</p>
+  </section>
+</div>
+
+<script src="luna.js"></script>
+<script>
+// Eclipses de luna visibles desde España (IGN), clave = fecha en hora de Madrid
+const ECL={"2027-02-21":"Eclipse penumbral (noche del 20 al 21)"};
+function eventsAround(year){
+  const ev={}, k0=Math.floor((year-2000)*12.3685)-14;
+  for(let k=k0;k<k0+30;k++){
+    ev[ymd(jdToDate(phaseJD(k)))]="new";
+    const fd=jdToDate(phaseJD(k+0.5)), key=ymd(fd);
+    ev[key]=isSuper(fd)?"super":"full";
+    for(let j=1;j<=AVISO_DIAS;j++){const pk=ymd(new Date(fd.getTime()-j*864e5)); if(!ev[pk]) ev[pk]="pre";}
+  }
+  return ev;
+}
+function moonSVG(size,k,waxing){
+  const r=size/2-1, c=size/2;
+  const rx=Math.abs(1-2*k)*r;
+  const s=waxing?1:0;
+  const sweep2=k<0.5?(waxing?0:1):(waxing?1:0);
+  const lit=k<0.01?"":`<path d="M${c} ${c-r} A${r} ${r} 0 0 ${s} ${c} ${c+r} A${rx} ${r} 0 0 ${sweep2} ${c} ${c-r}Z" fill="var(--moon)"/>`;
+  const full=k>0.99?`<circle cx="${c}" cy="${c}" r="${r}" fill="var(--moon)"/>`:"";
+  return `<circle cx="${c}" cy="${c}" r="${r}" fill="var(--shadow)" stroke="var(--line)" stroke-width="1"/>${full||lit}`;
+}
+const fmtLong=d=>new Intl.DateTimeFormat("es-ES",{timeZone:TZ,weekday:"long",day:"numeric",month:"long"}).format(d);
+const fmtTime=d=>new Intl.DateTimeFormat("es-ES",{timeZone:TZ,hour:"2-digit",minute:"2-digit"}).format(d);
+const fmtList=d=>new Intl.DateTimeFormat("es-ES",{timeZone:TZ,weekday:"short",day:"numeric",month:"short",year:"numeric"}).format(d);
+
+const now=new Date(), todayKey=ymd(now);
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let umbral=87; {const v=+store.get("umbral"); if(v>=50&&v<=99) umbral=v;}
+let [vy,vm]=todayKey.split("-").map(Number); vm--;
+
+function render(){
+  const ev=eventsAround(vy);
+  document.getElementById("monthName").textContent=new Intl.DateTimeFormat("es-ES",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(Date.UTC(vy,vm,1)));
+  let h=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"].map(d=>`<div class="dow">${d}</div>`).join("");
+  const first=new Date(Date.UTC(vy,vm,1)).getUTCDay(), days=new Date(Date.UTC(vy,vm+1,0)).getUTCDate();
+  for(let i=0;i<first;i++) h+="<div></div>";
+  for(let d=1;d<=days;d++){
+    const key=`${vy}-${String(vm+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const e=ev[key], il=illum(new Date(Date.UTC(vy,vm,d,11)));
+    const isFull=e==="full"||e==="super", ecl=ECL[key];
+    const cls="day"+(isFull?" ev full":e==="new"?" ev":"")+(e==="pre"?" pre":"")+(key===todayKey?" is-today":"")+(il.k*100>=umbral?" over":"");
+    if(isFull||e==="new"){
+      const sz=40, name=isFull?(e==="super"?"Superluna":"Luna llena"):"Luna nueva";
+      h+=`<div class="${cls}"><span class="n">${d}</span><svg width="${sz}" height="${sz}" viewBox="0 0 ${sz} ${sz}" role="img" aria-label="${name}">${moonSVG(sz,isFull?1:0,true)}</svg><span class="lab">${name}${isFull?'<br><b class="rest">Descanso</b>':""}${ecl?'<br><b class="ecl">Eclipse</b>':""}</span></div>`;
+    }else{
+      const p=Math.max(1,Math.min(99,Math.round(il.k*100)));
+      h+=`<div class="${cls}"><span class="n">${d}</span><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">${moonSVG(28,il.k,il.waxing)}</svg><span class="lab">${il.waxing?"Crec.":"Meng."}</span><span class="pct">${p}%</span>${e==="pre"?'<span class="zz">Dormir pronto</span>':""}</div>`;
+    }
+  }
+  document.getElementById("grid").innerHTML=h;
+}
+function renderTop(){
+  const fulls=fullMoonsFrom(now,14).filter(d=>ymd(d)>=todayKey);
+  const nf=fulls[0], days=daysBetween(now,nf);
+  document.getElementById("nextDays").textContent=days===0?"Hoy toca descansar":days===1?"Mañana descansas":`Descansas en ${days} días`;
+  document.getElementById("nextWhen").textContent=`${fmtLong(nf)}, a las ${fmtTime(nf)}${isSuper(nf)?" · Superluna":""}`;
+  const il=illum(now);
+  document.getElementById("todayTxt").textContent=`Hoy: ${il.waxing?"creciente":"menguante"}, ${Math.round(il.k*100)}% iluminada`;
+  document.getElementById("nextIcon").innerHTML=moonSVG(64,1,true);
+  document.getElementById("list").innerHTML=fulls.slice(0,12).map(d=>`<li><span><span style="text-transform:capitalize">${fmtList(d)}</span>${isSuper(d)?' <b class="tag">Superluna</b>':""}${ECL[ymd(d)]?` <b class="ecl">${ECL[ymd(d)]}</b>`:""}</span><span>${fmtTime(d)} h</span></li>`).join("");
+}
+document.getElementById("prev").onclick=()=>{vm--;if(vm<0){vm=11;vy--}render()};
+document.getElementById("next").onclick=()=>{vm++;if(vm>11){vm=0;vy++}render()};
+document.getElementById("goToday").onclick=()=>{[vy,vm]=todayKey.split("-").map(Number);vm--;render()};
+function periodo(){
+  const t0=new Date(todayKey+"T11:00:00Z"); let s=null,eD=null;
+  for(let i=0;i<60;i++){const d=new Date(t0.getTime()+i*864e5), on=illum(d).k*100>=umbral;
+    if(on&&!s) s=d; if(!on&&s){eD=new Date(d.getTime()-864e5);break;}}
+  const f=d=>new Intl.DateTimeFormat("es-ES",{timeZone:"UTC",weekday:"long",day:"numeric",month:"long"}).format(d);
+  const el=document.getElementById("periodo");
+  if(!s||!eD){el.textContent="";return}
+  const n=Math.round((eD-s)/864e5)+1;
+  el.textContent= ymd(s)===todayKey ? `Ahora mismo la luna está por encima del ${umbral}%, hasta el ${f(eD)}.` : `Próxima vez: del ${f(s)} al ${f(eD)} (${n} días).`;
+}
+const sl=document.getElementById("umbral");
+sl.value=umbral; document.getElementById("umbralTxt").textContent=umbral;
+sl.oninput=()=>{umbral=+sl.value;document.getElementById("umbralTxt").textContent=umbral;store.set("umbral",umbral);render();periodo()};
+render(); renderTop(); periodo();
+
+// Si la app se queda abierta y cambia el día, se recarga
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden && ymd(new Date())!==todayKey) location.reload(); });
+
+// ---------- Avisos ----------
+const $=id=>document.getElementById(id);
+const instalada=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+const icsUrl=new URL("avisos-luna.ics",location.href);
+$("calGoogle").href="https://calendar.google.com/calendar/r?cid="+encodeURIComponent("webcal://"+icsUrl.host+icsUrl.pathname);
+$("calApple").href="webcal://"+icsUrl.host+icsUrl.pathname;
+
+let swReg=null;
+async function sw(){ if(!swReg) swReg=await navigator.serviceWorker.ready; return swReg; }
+async function aSW(msg){ const r=await sw(); (r.active||navigator.serviceWorker.controller)?.postMessage(msg); }
+
+function pintarAvisos(){
+  const soporta="serviceWorker" in navigator && "Notification" in window;
+  const on=store.get("avisos")==="on" && soporta && Notification.permission==="granted";
+  $("avOn").hidden=on; $("avOff").hidden=!on; $("avTest").hidden=!on;
+  const est=$("avEstado"), nota=$("avNota");
+  est.className="estado"+(on?" ok":"");
+  if(!soporta){
+    est.textContent="Este navegador no permite notificaciones.";
+    nota.textContent=ios&&!instalada?"En iPhone: botón Compartir → «Añadir a pantalla de inicio», abre la app desde el icono y vuelve aquí. O usa el calendario de abajo.":"Usa el aviso del calendario de abajo.";
+    $("avOn").hidden=true; return;
+  }
+  if(Notification.permission==="denied"){
+    est.textContent="Las notificaciones están bloqueadas para esta web.";
+    nota.textContent="Actívalas en los ajustes del navegador (permisos del sitio → Notificaciones) o usa el calendario de abajo.";
+    return;
+  }
+  if(!on){
+    est.textContent="Avisos desactivados.";
+    nota.textContent=instalada?"":"Consejo: instala primero la app (menú del navegador → «Añadir a pantalla de inicio») para que los avisos lleguen con la app cerrada.";
+    return;
+  }
+  const ps=store.get("periodic")==="1";
+  est.textContent="✓ Avisos activados: te aviso 3 días antes de cada luna llena.";
+  nota.textContent=ps
+    ? "El móvil revisa la luna una vez al día, aunque no abras la app. Si Android ahorra batería con Chrome, el aviso puede llegar con retraso: el calendario de abajo es infalible."
+    : "Este navegador no revisa la luna con la app cerrada: el aviso te salta al abrir la app. Para que salte siempre, añade también el calendario de abajo.";
+}
+
+$("avOn").onclick=async()=>{
+  const p=await Notification.requestPermission();
+  if(p!=="granted"){pintarAvisos();return;}
+  const r=await sw(); let periodic=false;
+  try{
+    if("periodicSync" in r){
+      const st=await navigator.permissions.query({name:"periodic-background-sync"}).catch(()=>({state:"granted"}));
+      if(st.state!=="denied"){ await r.periodicSync.register("luna-diaria",{minInterval:12*60*60*1000}); periodic=true; }
+    }
+  }catch(e){}
+  store.set("avisos","on"); store.set("periodic",periodic?"1":"0");
+  await aSW({type:"avisos",on:true});
+  pintarAvisos();
+};
+$("avOff").onclick=async()=>{
+  store.set("avisos","off");
+  try{const r=await sw(); if("periodicSync" in r) await r.periodicSync.unregister("luna-diaria");}catch(e){}
+  await aSW({type:"avisos",on:false});
+  pintarAvisos();
+};
+$("avTest").onclick=()=>aSW({type:"prueba"});
+
+let instalarEvt=null;
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();instalarEvt=e;$("instalar").hidden=false;});
+$("instalar").onclick=async()=>{ if(!instalarEvt) return; instalarEvt.prompt(); await instalarEvt.userChoice; instalarEvt=null; $("instalar").hidden=true; };
+addEventListener("appinstalled",()=>{$("instalar").hidden=true;pintarAvisos();});
+
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("sw.js").then(()=>{
+    if(store.get("avisos")==="on" && Notification.permission==="granted") aSW({type:"comprobar"});
+  }).catch(()=>{});
+}
+pintarAvisos();
+</script>
+</body>
+</html>
